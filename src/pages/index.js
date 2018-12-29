@@ -7,7 +7,7 @@ import Image from '../components/image';
 import SEO from '../components/seo';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
+//import 'bootstrap/dist/css/bootstrap-theme.css';
 
 const IndexPage = () => (
 	<Layout>
@@ -16,7 +16,6 @@ const IndexPage = () => (
 			<title>My Title</title>
 			<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 		</Helmet>
-
 		<SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 		<h1>Hi people</h1>
 		<p>Welcome to your new Gatsby site.</p>
