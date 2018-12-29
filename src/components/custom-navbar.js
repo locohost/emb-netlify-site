@@ -6,7 +6,7 @@ import { Link } from 'gatsby';
 //import { withRouter } from 'react-router-dom'
 
 //import * as authService from './auth-service';
-import { Consumer } from '../context';
+import { Consumer } from './context';
 import './custom-navbar.css';
 
 class CustomNavbarWithContext extends Component {
