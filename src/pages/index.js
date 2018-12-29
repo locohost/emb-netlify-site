@@ -7,6 +7,7 @@ import Image from '../components/image';
 import SEO from '../components/seo';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
 
 const IndexPage = () => (
 	<Layout>
@@ -24,7 +25,7 @@ const IndexPage = () => (
 			<Image />
 		</div>
 		{/* <Link to="/page-2/">Go to page 2</Link> */}
-		<div data-netlify-identity-button>Login with Netlify</div>
+		<div data-netlify-identity-button></div>
 	</Layout>
 );
 
