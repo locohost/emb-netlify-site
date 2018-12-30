@@ -1,19 +1,17 @@
 import React from 'react';
-//import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
 import Layout from '../components/layout';
 import Image from '../components/image';
 import SEO from '../components/seo';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
-
 const IndexPage = () => (
 	<Layout>
 		<Helmet>
 			<meta charSet="utf-8" />
-			<title>My Title</title>
+			<title>EMB | Web Pub/Sub</title>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
+			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 			<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 		</Helmet>
 		<SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
