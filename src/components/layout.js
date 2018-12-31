@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
+//import { Router } from 'react-router-dom';
 import { CustomNavbar } from './custom-navbar';
 
 //import Header from './header'

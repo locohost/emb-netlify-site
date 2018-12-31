@@ -12,7 +12,7 @@ const IndexPage = () => (
 			<title>EMB | Web Pub/Sub</title>
 			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
 			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-			<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+			{/* <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> */}
 		</Helmet>
 		<SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 		<h1>Hi people</h1>
@@ -22,7 +22,7 @@ const IndexPage = () => (
 			<Image />
 		</div>
 		{/* <Link to="/page-2/">Go to page 2</Link> */}
-		<div data-netlify-identity-button></div>
+		{/* <div data-netlify-identity-button></div> */}
 	</Layout>
 );
 

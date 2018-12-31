@@ -37,4 +37,26 @@ nav.navbar, .navbar-default {
 	color: white;
 	background-color: transparent;
   }
-  
+/*
+a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active
+*/
+a a:link a:visited .navbar {
+	cursor: pointer;
+	font-size: 12pt;
+	color: white;
+	background-color: transparent;
+	margin-right: 20px;
+	text-decoration: none;
+}
+
+a .nav-link {
+	margin-right: '20px';
+	font-size: '12pt';
+	cursor: 'pointer';
+	color: 'white';
+	font-family: 'Roboto';
+	text-decoration: 'none';
+}
