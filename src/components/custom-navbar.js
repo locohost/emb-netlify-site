@@ -30,7 +30,7 @@ const styles = {
 		flexGrow: 1,
 	},
 	navBttn: {
-		marginRight: '10px',
+		marginRight: '5px',
 		fontSize: '12pt',
 		cursor: 'pointer',
 		color: 'inherit',
@@ -57,35 +57,12 @@ class MenuAppBar extends React.Component {
 		this.setState({ auth: event.target.checked });
 	};
 
-	handleLoginClick = (event) => {
-		netlifyIdentity.open();
+	handleNavClick = (link) => {
+		navigate(link);
 	};
 
-	handleNavClick = (event, link) => {
-		navigate(link);
-		// switch (id) {
-		// 	case 'home':
-		// 		navigate('/home');
-		// 		break;
-		// 	case 'about':
-		// 		navigate('/about');
-		// 		break;
-		// 	case 'news':
-		// 		navigate('/news');
-		// 		break;
-		// 	case 'blog':
-		// 		navigate('/blog');
-		// 		break;
-		// 	case 'dashboard':
-		// 		navigate('/dashboard');
-		// 		break;
-		// 	case 'login':
-		// 		netlifyIdentity.open();
-		// 		break;
-		// 	default:
-		// 		console.error('Bad switch id in handleNavClick');
-		// 		break;
-		// }
+	handleLoginClick = (event) => {
+		netlifyIdentity.open();
 	};
 
 	handleMenu = event => {
@@ -108,24 +85,42 @@ class MenuAppBar extends React.Component {
 						<IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
 							<MenuIcon />
 						</IconButton>
-						<Button 
-							onClick={e => this.handleNavClick(e, '/')}
-							className={classes.navBttn}>Home</Button>
-						<Button 
-							onClick={e => this.handleNavClick(e, '/about')}
-							className={classes.navBttn}>About</Button>
-						<Button 
-							onClick={e => this.handleNavClick(e, '/news')}
-							className={classes.navBttn}>News</Button>
-						<Button 
-							onClick={e => this.handleNavClick(e, '/blog')}
-							className={classes.navBttn}>Blog</Button>
-						<Button 
-							onClick={e => this.handleNavClick(e, '/dashboard')}
-							className={classes.navBttn}>Dashboard</Button>
-						<Button 
+						<Button
+							onClick={e => this.handleNavClick('/')}
+							className={classes.navBttn}
+						>
+							Home
+						</Button>
+						<Button
+							onClick={e => this.handleNavClick('/about')}
+							className={classes.navBttn}
+						>
+							About
+						</Button>
+						<Button
+							onClick={e => this.handleNavClick('/news')}
+							className={classes.navBttn}
+						>
+							News
+						</Button>
+						<Button
+							onClick={e => this.handleNavClick('/blog')}
+							className={classes.navBttn}
+						>
+							Blog
+						</Button>
+						<Button
+							onClick={e => this.handleNavClick('/dashboard')}
+							className={classes.navBttn}
+						>
+							Dashboard
+						</Button>
+						<Button
 							onClick={this.handleLoginClick}
-							className={classes.navBttn}>Login</Button>
+							className={classes.navBttn}
+						>
+							Login
+						</Button>
 						<div className={classes.grow} />
 						{auth && (
 							<div>
